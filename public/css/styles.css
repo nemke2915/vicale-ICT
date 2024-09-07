@@ -1,0 +1,37 @@
+/* General styles */
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Remove flex from body to avoid conflicts */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Remove flex from .main-content to allow normal content flow */
+.main-content {
+    /* Removed flex: 1; */
+    section {
+        padding: 64px 0;
+    }
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Allow footer to behave normally */
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

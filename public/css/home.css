@@ -1,0 +1,79 @@
+/* Custom Styling for Home Page */
+.hero-section {
+    background-color: #1a1a5e;
+    color: white;
+    padding: 80px 0;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.about-section {
+    padding: 60px 0;
+    background-color: #f4f6f9;
+}
+
+.about-section h2 {
+    color: #1a1a5e;
+}
+
+.services-section {
+    padding: 60px 0;
+}
+
+.services-section .card {
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.services-section .card:hover {
+    transform: translateY(-10px);
+}
+
+.why-choose-us-section {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+.why-choose-us-section h2 {
+    color: #1a1a5e;
+    margin-bottom: 40px;
+}
+
+.why-choose-us-section i {
+    font-size: 3rem;
+    color: #1a1a5e;
+    margin-bottom: 20px;
+}
+
+.cta-section {
+    background-color: #f4f6f9;
+    padding: 60px 0;
+}
+
+.cta-section h2 {
+    color: #1a1a5e;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

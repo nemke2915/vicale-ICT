@@ -1,0 +1,133 @@
+/* Custom Styling for About Page */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.about-header {
+    background-color: #1a1a5e;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about-header h1 {
+    font-size: 3rem;
+}
+
+.about-content {
+    padding: 50px 0;
+    background-color: #f4f6f9;
+    opacity: 0;  /* Initially hidden */
+    transform: translateY(50px); /* Slide from below */
+    transition: all 0.8s ease-in-out; /* Smooth transition */
+}
+
+.about-content.animate {
+    opacity: 1;
+    transform: translateY(0); /* Final position */
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.about-content h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #1a1a5e;
+}
+
+.icon-section {
+    font-size: 4rem;
+    color: #1a1a5e;
+    margin-bottom: 20px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(50px); /* Slide up effect */
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.card.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Meet Our Team Section */
+.team-section {
+    padding: 60px 0;
+    background-color: #ffffff;
+    text-align: center;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Slide from below */
+    transition: all 0.8s ease-in-out;
+}
+
+.team-section.animate {
+    opacity: 1;
+    transform: translateY(0); /* Final position */
+}
+
+.team-section h2 {
+    color: #1a1a5e;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.team-member {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Slide from below */
+    transition: all 0.8s ease-in-out;
+}
+
+.team-member.animate {
+    opacity: 1;
+    transform: translateY(0); /* Final position */
+}
+
+.team-photo {
+    max-width: 180px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.team-info h3 {
+    font-size: 1.8rem;
+    color: #1a1a5e;
+    margin-bottom: 10px;
+}
+
+.team-info p {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
