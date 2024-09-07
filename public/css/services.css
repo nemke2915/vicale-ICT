@@ -1,0 +1,48 @@
+/* Service Section Styling */
+h1 {
+    font-size: 3rem;
+    color: #1a1a5e;
+    margin-bottom: 50px;
+}
+
+/* Card Styling */
+.card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Lifts the card on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Adds a stronger shadow */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: #1a1a5e; /* Dark blue to match the brand */
+}
+
+/* Text Styling */
+.card-title {
+    font-size: 1.5rem;
+    color: #1a1a5e;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .service-icon {
+        font-size: 2.5rem;
+    }
+}

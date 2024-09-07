@@ -1,22 +1,50 @@
 /* General styles */
-html,
-body {
+html, body {
     height: 100%;
     margin: 0;
-}
-
-/* Remove flex from body to avoid conflicts */
-body {
     font-family: 'Arial', sans-serif;
 }
 
-/* Remove flex from .main-content to allow normal content flow */
-.main-content {
-    /* Removed flex: 1; */
-    section {
-        padding: 64px 0;
-    }
+/* Navbar styles */
+.navbar {
+    background-color: #e9eff6; /* Light bluish-gray */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
+
+.navbar-brand img {
+    max-height: 60px; /* Keep height under control */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    color: #1a1a5e; /* Dark blue text */
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+    color: #0056b3; /* Slightly lighter blue on hover */
+}
+
+/* Active link */
+.navbar-nav .nav-link.active {
+    color: #003366; /* Dark blue for the active link */
+    font-weight: bold; /* Bold without underline */
+}
+
+/* Navbar toggler (for mobile view) */
+.navbar-toggler {
+    border-color: #1a1a5e;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(26,26,94,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* End of Navbar  */
 
 /* Footer styles */
 footer {
@@ -24,7 +52,6 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
-    position: relative; /* Allow footer to behave normally */
 }
 
 footer a {
@@ -34,4 +61,13 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Main content should take the remaining space */
+.main-content {
+    flex: 1;
+    
+    section {
+        padding: 64px 0;
+    }
 }

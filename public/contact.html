@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Vicale ICT</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/styles.css"> <!-- Global Styles -->
+    <link rel="stylesheet" href="css/contact.css"> <!-- Contact Page Specific Styles -->
 </head>
 
-<body class="contact-page">
+<body class="contact-page"> <!-- Added class="contact-page" -->
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light"> <!-- Changed to navbar-light -->
         <div class="container">
             <a class="navbar-brand" href="home.html">
-                <img src="images/logo.png" alt="Vicale ICT Logo" style="height: 40px;"> Vicale ICT
+                <img src="images/logo.png" alt="Vicale ICT Logo"> Vicale ICT
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,56 +40,74 @@
         </div>
     </nav>
 
-    <div class="main-content">
-        <!-- Contact Section -->
-        <section class="contact-section">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <div class="contact-form">
-                            <h1 class="text-center">Get in Touch</h1>
-                            <form id="contactForm">
-                                <div class="mb-4">
-                                    <label for="name" class="form-label">Name</label>
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
-                                </div>
-                                <div class="mb-4">
-                                    <label for="email" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
-                                </div>
-                                <div class="mb-4">
-                                    <label for="subject" class="form-label">Subject</label>
-                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter the subject" required>
-                                </div>
-                                <div class="mb-4">
-                                    <label for="message" class="form-label">Message</label>
-                                    <textarea class="form-control" id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
-                                </div>
-                                <div class="text-center">
-                                    <button type="submit" class="btn btn-custom">Send Message</button>
-                                </div>
-                            </form>
-                        </div>
+    <!-- Contact Form Section -->
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Get in Touch</h1>
+        <form id="contactForm">
+            <div class="row">
+                <!-- Left Side: Name, Email, Subject -->
+                <div class="col-md-6">
+                    <div class="mb-4">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter the subject" required>
+                    </div>
+                </div>
+
+                <!-- Right Side: Message -->
+                <div class="col-md-6">
+                    <div class="mb-4">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="8" placeholder="Write your message here..." required></textarea>
                     </div>
                 </div>
             </div>
-        </section>
+
+            <!-- Submit Button -->
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Modal for showing responses -->
+    <div class="modal fade" id="responseModal" tabindex="-1" aria-labelledby="responseModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="responseModalLabel">Notification</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalMessage">
+                    <!-- This is where your response message will appear -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer mt-5">
         <div class="container text-center">
             <p>Contact us: info@vicaleict.com | +123-456-7890</p>
             <p>Follow us on:
-                <a href="#">Twitter</a> |
-                <a href="#">LinkedIn</a>
+                <a href="https://www.linkedin.com/company/gcpn-blockchain-fintech/" target="_blank">LinkedIn</a>
             </p>
             <p>&copy; 2024 Vicale ICT</p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/contact.js"></script> <!-- Link to external JS file -->
+    <script src="js/contact.js"></script> <!-- JS for handling form -->
 </body>
 
 </html>

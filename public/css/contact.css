@@ -1,64 +1,61 @@
-/* Contact Page Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #6e8bdf;
+/* Contact Page Background */
+.contact-page {
+    background-color: #1a1a5e; /* Solid dark blue background */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff; /* White text color */
 }
 
-.contact-section {
+/* Main content should take up the remaining space */
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 60px 0;
 }
 
+/* Form container styling */
 .contact-form {
-    background-color: #fff;
-    border-radius: 15px;
+    background-color: #ffffff; /* White form background for contrast */
     padding: 40px;
+    border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    color: #000000; /* Black text for form fields */
 }
 
+/* Form heading styling */
 .contact-form h1 {
-    color: #1a1a5e;
-    font-size: 2.5rem;
+    color: #ffffff; /* White heading */
+    text-align: center;
     margin-bottom: 30px;
 }
 
+/* Form input and textarea styling */
 .contact-form .form-control {
-    border-radius: 30px;
-    padding: 15px;
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Submit button styling */
+.btn-primary {
+    padding: 12px 30px;
     font-size: 1.1rem;
-}
-
-.contact-form .btn-custom {
-    background-color: #1a1a5e;
-    color: #fff;
     border-radius: 30px;
-    padding: 10px 25px;
-    font-size: 1.1rem;
-    transition: background-color 0.3s;
-}
-
-.contact-form .btn-custom:hover {
-    background-color: #14144b;
-}
-
-.contact-form .form-label {
-    font-size: 1.2rem;
-    color: #333;
-}
-
-.footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-.footer a {
     color: #fff;
-    text-decoration: none;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.footer a:hover {
-    text-decoration: underline;
+.btn-primary:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
+

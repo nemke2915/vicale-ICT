@@ -12,9 +12,11 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light"> <!-- Changed to navbar-light -->
         <div class="container">
-            <a class="navbar-brand" href="#">Vicale ICT</a>
+            <a class="navbar-brand" href="home.html">
+                <img src="images/logo.png" alt="Vicale ICT Logo"> Vicale ICT
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -42,7 +44,7 @@
     <section class="about-header">
         <div class="container">
             <h1>About Vicale ICT</h1>
-            <p>We are a future-oriented company with over 30 years of expertise.</p>
+            <p>Future-focused, leveraging over 30 years of expertise in IT and banking to drive innovation.</p>
         </div>
     </section>
 
@@ -53,33 +55,33 @@
                 <div class="col-md-4">
                     <div class="card p-4">
                         <div class="text-center icon-section">
-                            <i class="bi bi-cpu"></i> <!-- Icon for technology -->
+                            <i class="bi bi-lightbulb"></i> <!-- Icon for innovation -->
                         </div>
-                        <h2>Payment Processing</h2>
+                        <h2>Innovative Solutions</h2>
                         <p>
-                            We create machine learning algorithms and tools for data scientists, ensuring that financial transactions bring additional value and efficiency.
+                            Vicale ICT is committed to delivering cutting-edge IT solutions that shape the future of financial technology and digital ecosystems.
                         </p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card p-4">
                         <div class="text-center icon-section">
-                            <i class="bi bi-blockchain"></i> <!-- Icon for blockchain -->
+                            <i class="bi bi-people"></i> <!-- Icon for collaboration -->
                         </div>
-                        <h2>Blockchain Solutions</h2>
+                        <h2>Expert Team</h2>
                         <p>
-                            With backgrounds in gaming, gambling, academia, banking, telco, and treasury, our team delivers top-tier blockchain expertise tailored for your needs.
+                            Our team is composed of experts with backgrounds in IT, finance, banking, and academia, dedicated to driving meaningful change across industries.
                         </p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card p-4">
                         <div class="text-center icon-section">
-                            <i class="bi bi-wallet2"></i> <!-- Icon for digital assets -->
+                            <i class="bi bi-trophy"></i> <!-- Icon for success -->
                         </div>
-                        <h2>Digital Asset Management</h2>
+                        <h2>30+ Years of Experience</h2>
                         <p>
-                            We believe digital assets will become mainstream, and we ensure their safe management with full regulatory compliance and support.
+                            With over three decades of experience, Vicale ICT is a leader in creating sustainable, secure, and compliant IT infrastructures.
                         </p>
                     </div>
                 </div>
@@ -96,7 +98,7 @@
                 <div class="team-info">
                     <h3>Predrag Nikolic - CEO</h3>
                     <p>
-                        Predrag Nikolic is a banking and IT industry expert with over 30 years of experience. As the founder and CEO of Vicale ICT, he leads the company with a future-oriented vision, vast skillset, and major expertise in multiple synergetic areas. His leadership drives innovation in payment processing, blockchain solutions, and digital asset management.
+                        Predrag Nikolic is a visionary leader with extensive expertise in banking and IT. He has dedicated his career to building innovative solutions and shaping the future of financial technology. His leadership at Vicale ICT drives the company’s success in delivering secure and efficient IT solutions to clients worldwide.
                     </p>
                 </div>
             </div>
@@ -108,55 +110,14 @@
         <div class="container">
             <p>Contact us: info@vicaleict.com | +123-456-7890</p>
             <p>Follow us on:
-                <a href="#">Twitter</a> |
-                <a href="#">LinkedIn</a>
+                <a href="https://www.linkedin.com/company/gcpn-blockchain-fintech/" target="_blank">LinkedIn</a>
             </p>
             <p>&copy; 2024 Vicale ICT</p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Function to check if an element is in the viewport
-        function isInViewport(element) {
-            const rect = element.getBoundingClientRect();
-            return rect.top <= (window.innerHeight || document.documentElement.clientHeight) && rect.bottom >= 0;
-        }
-    
-        // Function to add the 'animate' class when in view
-        function checkScroll() {
-            const aboutContent = document.querySelector('.about-content');
-            const cards = document.querySelectorAll('.card');
-            const teamSection = document.querySelector('.team-section');
-            const teamMember = document.querySelector('.team-member');
-    
-            if (isInViewport(aboutContent)) {
-                aboutContent.classList.add('animate');
-            }
-    
-            cards.forEach((card) => {
-                if (isInViewport(card)) {
-                    card.classList.add('animate');
-                }
-            });
-    
-            if (isInViewport(teamSection)) {
-                teamSection.classList.add('animate');
-            }
-    
-            if (isInViewport(teamMember)) {
-                teamMember.classList.add('animate');
-            }
-        }
-    
-        // Run on scroll
-        window.addEventListener('scroll', checkScroll);
-    
-        // Run once on page load in case elements are already in view
-        checkScroll();
-    </script>
-    
-    
+    <script src="js/about.js"></script> <!-- JS for animations -->
     <!-- Optionally load Bootstrap icons if not included in the project -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </body>
