@@ -15,6 +15,9 @@ const PORT = process.env.PORT || 3000;
 // Set up helmet to secure HTTP headers
 app.use(helmet()); // Use helmet to secure HTTP headers
 
+// Enable Express to trust the 'X-Forwarded-For' header from proxies
+app.set('trust proxy', 1); // or app.set('trust proxy', true);
+
 // Set up middleware
 app.use(cookieParser()); // Make sure cookie-parser is used before csurf
 app.use(express.urlencoded({ extended: false }));
