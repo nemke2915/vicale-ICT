@@ -59,3 +59,14 @@
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
+/* Modal body styling to fix white text on white background */
+.modal-body {
+    color: #000000 !important; /* Black text color for the modal */
+    background-color: #ffffff; /* White background for the modal body */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.modal-header {
+    color: #000000 !important;
+}
