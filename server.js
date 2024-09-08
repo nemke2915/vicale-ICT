@@ -74,6 +74,11 @@ app.post('/send-mail', sendMailLimiter, csrfProtection, (req, res) => {
     });
 });
 
+// Catch-all route to redirect to the home page for any undefined route
+app.get('*', (req, res) => {
+    res.redirect('/home.html'); // Redirect to /home.html for undefined routes
+});
+
 // Start the server
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
