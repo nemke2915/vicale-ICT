@@ -1,7 +1,8 @@
 /* General styles */
 html, body {
-    height: 100%;
-    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     font-family: 'Arial', sans-serif;
 }
 
@@ -48,6 +49,7 @@ html, body {
 
 /* Footer styles */
 footer {
+    margin-top: auto;
     background-color: #333;
     color: #fff;
     padding: 20px;

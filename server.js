@@ -35,7 +35,7 @@ const sendMailLimiter = rateLimit({
 
 // Serve static files with caching
 app.use(express.static(path.join(__dirname, 'public'), {
-    maxAge: '1d' // Cache static files for 1 day (24 hours)
+    maxAge: '0' // Cache static files for 1 day (24 hours)
 }));
 
 // Route to provide the CSRF token

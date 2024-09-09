@@ -1,7 +1,6 @@
 /* Contact Page Background */
 .contact-page {
     background-color: #1a1a5e; /* Solid dark blue background */
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     color: #ffffff; /* White text color */
