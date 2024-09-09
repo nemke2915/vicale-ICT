@@ -6,6 +6,7 @@ const nodemailer = require('nodemailer');
 const dotenv = require('dotenv');
 const rateLimit = require('express-rate-limit');
 const helmet = require('helmet');
+const axios = require('axios');
 
 dotenv.config();
 
@@ -81,6 +82,23 @@ app.post('/send-mail', sendMailLimiter, csrfProtection, (req, res) => {
 app.get('*', (req, res) => {
     res.redirect('/home.html'); // Redirect to /home.html for undefined routes
 });
+
+
+const url = `https://vicale-ict.onrender.com`; // Replace with your Render URL
+const interval = 30000; // Interval in milliseconds (30 seconds)
+
+function reloadWebsite() {
+  axios.get(url)
+    .then(response => {
+      console.log(`Reloaded at ${new Date().toISOString()}: Status Code ${response.status}`);
+    })
+    .catch(error => {
+      console.error(`Error reloading at ${new Date().toISOString()}:`, error.message);
+    });
+}
+
+
+setInterval(reloadWebsite, interval);
 
 // Start the server
 app.listen(PORT, () => {
