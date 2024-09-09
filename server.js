@@ -65,7 +65,7 @@ app.post('/send-mail', sendMailLimiter, csrfProtection, (req, res) => {
         from: `"${name}" <${email}>`,
         to: process.env.RECIPIENT_EMAIL,
         subject: subject,
-        text: message,
+        text: `Name: ${name}\nEmail: ${email}\n\nMessage: ${message}`,
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
