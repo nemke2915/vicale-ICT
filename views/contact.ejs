@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="<%= lng %>">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; img-src 'self' data: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; font-src 'self' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com;">
+    <title><%= t('contact.contactPageTitle') %> - Vicale ICT</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css"> <!-- Global Styles -->
+    <link rel="stylesheet" href="/css/contact.css"> <!-- Contact Page Specific Styles -->
+</head>
+
+<body class="contact-page">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="/home">
+                <img src="/images/logo.png" alt="<%= t('navbar.companyLogoAlt') %>"> Vicale ICT
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" id="homeLink" href="/home">
+                            <%= t('navbar.home') %>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="aboutUsLink" href="/about">
+                            <%= t('navbar.aboutUs') %>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="servicesLink" href="/services">
+                            <%= t('navbar.services') %>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="contactLink" href="/contact">
+                            <%= t('navbar.contact') %>
+                        </a>
+                    </li>
+                    <!-- Language switcher with flag images -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarLang" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <%= t('navbar.language') %>: <span id="activeLang">
+                                    <%= lng.toUpperCase() %>
+                                </span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarLang">
+                            <li>
+                                <a class="dropdown-item" href="#" data-lang="en">
+                                    English <img class="flag-icon" src="images/us.png" alt="English" width="20" height="20"> 
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" data-lang="sr">
+                                    Serbian <img class="flag-icon" src="images/sr.png" alt="Serbian" width="20" height="20">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <!-- Contact Form Section -->
+        <div class="container mt-5">
+            <h1 class="text-center mb-4"><%= t('contact.contactTitle') %></h1>
+            <form id="contactForm">
+                <div class="row">
+                    <!-- Left Side: Name, Email, Subject -->
+                    <div class="col-md-6">
+                        <div class="mb-4">
+                            <label for="name" class="form-label"><%= t('contact.nameLabel') %></label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="<%= t('contact.namePlaceholder') %>"
+                                required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="form-label"><%= t('contact.emailLabel') %></label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="<%= t('contact.emailPlaceholder') %>"
+                                required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="subject" class="form-label"><%= t('contact.subjectLabel') %></label>
+                            <input type="text" class="form-control" id="subject" name="subject"
+                                placeholder="<%= t('contact.subjectPlaceholder') %>" required>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Message -->
+                    <div class="col-md-6">
+                        <div class="mb-4">
+                            <label for="message" class="form-label"><%= t('contact.messageLabel') %></label>
+                            <textarea class="form-control" id="message" name="message" rows="8"
+                                placeholder="<%= t('contact.messagePlaceholder') %>" required></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary"><%= t('contact.sendMessageButton') %></button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Modal for showing responses -->
+        <div class="modal fade" id="responseModal" tabindex="-1" aria-labelledby="responseModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="responseModalLabel"><%= t('contact.modalTitle') %></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="modalMessage">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><%= t('contact.modalCloseButton') %></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <div class="container text-center">
+            <p><%= t('footer.contactEmail') %>: predrag.nikolic@vicaleict.com</p>
+            <p><%= t('footer.followUsText') %>:
+                <a href="https://www.linkedin.com/company/gcpn-blockchain-fintech/" target="_blank">LinkedIn</a>
+            </p>
+            <p>&copy; 2024 Vicale ICT</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.8.4/i18next.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/i18next-config.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

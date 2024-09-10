@@ -73,3 +73,10 @@ footer a:hover {
         padding: 64px 0;
     }
 }
+
+.flag-icon {
+    width: 20px;     /* Set the width of the flag */
+    height: auto;    /* Maintain the aspect ratio */
+    margin-left: 8px; /* Add space between the flag and the text */
+    vertical-align: middle; /* Align the flag with the text */
+}

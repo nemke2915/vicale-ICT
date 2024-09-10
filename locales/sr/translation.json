@@ -1,0 +1,83 @@
+{
+  "navbar": {
+    "home": "Početna",
+    "aboutUs": "O nama",
+    "services": "Usluge",
+    "contact": "Kontakt",
+    "language": "Jezik",
+    "companyLogoAlt": "Logo Vicale ICT"
+  },
+  "footer": {
+    "contactEmail": "Kontaktirajte nas",
+    "followUsText": "Pratite nas na"
+  },
+  "home": {
+    "homePageTitle": "Početna - Vicale ICT",
+    "heroTitle": "Ojačavanje Budućnosti Finansija",
+    "heroText": "Sa više od 30 godina iskustva za pružanje vrhunskih rešenja u obradi plaćanja, blockchain tehnologiji i upravljanju digitalnom imovinom.",
+    "contactButton": "Kontaktirajte nas",
+    "aboutUsTitle": "O Vicale ICT",
+    "aboutUsText": "Osnovan i podržan od strane Predraga Nikolića, stručnjaka iz oblasti bankarstva i IT industrije sa preko 30 godina iskustva. Vicale ICT je kompanija orijentisana ka budućnosti, sa jakim temeljima, širokim spektrom veština i ekspertizom u različitim industrijama.",
+    "learnMore": "Saznajte više o nama",
+    "coreServicesTitle": "Naše Osnovne Usluge",
+    "paymentProcessingTitle": "Obrada Plaćanja",
+    "paymentProcessingText": "Specijalizujemo se za stvaranje algoritama mašinskog učenja i alata za podatke koji ne samo da dodaju vrednost transakcijama, već i povećavaju efikasnost.",
+    "blockchainTitle": "Blockchain Rešenja",
+    "blockchainText": "Naš tim, sa ekspertizom u igrama, akademiji, bankarstvu i drugim oblastima, pruža prilagođena blockchain rešenja koja ispunjavaju najviše standarde bezbednosti i efikasnosti.",
+    "digitalAssetManagementTitle": "Upravljanje Digitalnom Imovinom",
+    "digitalAssetManagementText": "Obezbeđujemo usklađenost sa propisima i sveobuhvatnu podršku za upravljanje digitalnom imovinom, čineći digitalnu imovinu dostupnom široj publici.",
+    "whyChooseUsTitle": "Zašto Izabrati Vicale ICT?",
+    "experienceTitle": "Preko 30 Godina Iskustva",
+    "experienceText": "Sa solidnim iskustvom u bankarstvu i IT industriji, pružamo vodeću ekspertizu u obradi plaćanja i blockchain tehnologiji.",
+    "customizedSolutionsTitle": "Prilagođena Rešenja",
+    "customizedSolutionsText": "Prilagođavamo svako rešenje vašim jedinstvenim potrebama, osiguravajući optimalne performanse i usklađenost sa industrijskim standardima.",
+    "innovativeTechTitle": "Inovativna Tehnologija",
+    "innovativeTechText": "Naš fokus na najnovije tehnologije osigurava da vaša firma ostane ispred u brzo promenljivom digitalnom okruženju.",
+    "readyToTransformTitle": "Spremni za Transformaciju Vašeg Poslovanja?",
+    "readyToTransformText": "Kontaktirajte nas danas da saznate više o tome kako Vicale ICT može pomoći vašem poslovanju da raste i inovira sa našim prilagođenim rešenjima.",
+    "contactUsButton": "Kontaktirajte nas"
+  },
+  "about": {
+    "aboutPageTitle": "O nama - Vicale ICT",
+    "aboutUsTitle": "O Vicale ICT",
+    "aboutUsDescription": "Usmereni ka budućnosti, koristeći preko 30 godina stručnosti u IT-u i bankarstvu da podstaknemo inovacije.",
+    "innovativeSolutionsTitle": "Inovativna Rešenja",
+    "innovativeSolutionsText": "Vicale ICT se posvećuje pružanju najmodernijih IT rešenja koja oblikuju budućnost finansijskih tehnologija i digitalnih ekosistema.",
+    "expertTeamTitle": "Stručni Tim",
+    "expertTeamText": "Naš tim se sastoji od stručnjaka sa iskustvom u IT-u, finansijama, bankarstvu i akademiji, posvećenih pokretanju značajnih promena u različitim industrijama.",
+    "yearsOfExperienceTitle": "Preko 30 Godina Iskustva",
+    "yearsOfExperienceText": "Sa preko tri decenije iskustva, Vicale ICT je lider u kreiranju održivih, sigurnih i usklađenih IT infrastruktura.",
+    "meetOurTeam": "Upoznajte Naš Tim",
+    "ceoAltText": "Predrag Nikolić",
+    "ceoName": "Predrag Nikolić - Direktor",
+    "ceoBio": "Predrag Nikolić je vizionarski lider sa velikim iskustvom u bankarstvu i IT-u. Posvetio je svoju karijeru izgradnji inovativnih rešenja i oblikovanju budućnosti finansijskih tehnologija. Njegovo vođstvo u Vicale ICT kompaniji omogućava uspešno pružanje sigurnih i efikasnih IT rešenja klijentima širom sveta."
+  },
+  "services": {
+    "servicesPageTitle": "Usluge - Vicale ICT",
+    "title": "Naše Usluge",
+    "paymentProcessingTitle": "Obrada Plaćanja",
+    "paymentProcessingText": "Koristimo algoritme mašinskog učenja i alate za obradu podataka kako bismo osigurali da su vaše finansijske transakcije optimizovane za dodatu vrednost.",
+    "blockchainTitle": "Blockchain Rešenja",
+    "blockchainText": "Sa iskustvom u više sektora, poput bankarstva, telekomunikacija i igara, pružamo prilagođena blockchain rešenja koja odgovaraju vašim jedinstvenim potrebama.",
+    "digitalAssetManagementTitle": "Upravljanje Digitalnom Imovinom",
+    "digitalAssetManagementText": "Obezbeđujemo sigurno upravljanje digitalnom imovinom kroz kompletnu usklađenost sa propisima i najnovije najbolje prakse u industriji."
+  },
+  "contact": {
+    "contactPageTitle": "Kontakt - Vicale ICT",
+    "contactTitle": "Kontaktirajte nas",
+    "nameLabel": "Ime",
+    "namePlaceholder": "Unesite vaše ime",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Unesite vašu email adresu",
+    "subjectLabel": "Naslov",
+    "subjectPlaceholder": "Unesite naslov",
+    "messageLabel": "Poruka",
+    "messagePlaceholder": "Napišite vašu poruku...",
+    "sendMessageButton": "Pošaljite poruku",
+    "modalTitle": "Obaveštenje o slanju emaila",
+    "modalCloseButton": "Zatvori",
+    "emailSuccess": "Email je uspešno poslat. Odgovorićemo što pre možemo.",
+    "emailFailure": "Nije uspelo slanje emaila. Molimo pokušajte kasnije.",
+    "emailError": "Došlo je do greške. Molimo pokušajte kasnije."
+  }
+}

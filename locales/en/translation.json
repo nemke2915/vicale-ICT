@@ -1,0 +1,83 @@
+{
+  "navbar": {
+    "home": "Home",
+    "aboutUs": "About Us",
+    "services": "Services",
+    "contact": "Contact",
+    "language": "Language",
+    "companyLogoAlt": "Vicale ICT Logo"
+  },
+  "footer": {
+    "contactEmail": "Contact us",
+    "followUsText": "Follow us on"
+  },
+  "home": {
+    "homePageTitle": "Home - Vicale ICT",
+    "heroTitle": "Empowering the Future of Finance",
+    "heroText": "Leveraging 30+ years of expertise to deliver cutting-edge solutions in payment processing, blockchain, and digital asset management.",
+    "contactButton": "Get in Touch",
+    "aboutUsTitle": "About Vicale ICT",
+    "aboutUsText": "Founded and supported by Predrag Nikolic, a banking and IT industry expert with over 30 years of experience. Vicale ICT is a future-oriented company with a strong foundation, vast skillset, and expertise across multiple industries.",
+    "learnMore": "Learn More About Us",
+    "coreServicesTitle": "Our Core Services",
+    "paymentProcessingTitle": "Payment Processing",
+    "paymentProcessingText": "We specialize in creating machine learning algorithms and data tools that ensure financial transactions not only add value but also improve efficiency.",
+    "blockchainTitle": "Blockchain Solutions",
+    "blockchainText": "Our team, with expertise across gaming, academia, banking, and more, delivers tailored blockchain solutions that meet the highest standards of security and efficiency.",
+    "digitalAssetManagementTitle": "Digital Asset Management",
+    "digitalAssetManagementText": "We ensure regulatory compliance and comprehensive support for digital asset management, making digital assets accessible to the general audience.",
+    "whyChooseUsTitle": "Why Choose Vicale ICT?",
+    "experienceTitle": "30+ Years of Experience",
+    "experienceText": "With a solid background in banking and IT, we provide industry-leading expertise in payment processing and blockchain technology.",
+    "customizedSolutionsTitle": "Customized Solutions",
+    "customizedSolutionsText": "We tailor each solution to your unique needs, ensuring optimal performance and compliance with industry standards.",
+    "innovativeTechTitle": "Innovative Technology",
+    "innovativeTechText": "Our focus on cutting-edge technology ensures that your business stays ahead in a rapidly evolving digital landscape.",
+    "readyToTransformTitle": "Ready to Transform Your Business?",
+    "readyToTransformText": "Contact us today to learn more about how Vicale ICT can help your business grow and innovate with our tailored solutions.",
+    "contactUsButton": "Contact Us"
+  },
+  "about": {
+    "aboutPageTitle": "About Us - Vicale ICT",
+    "aboutUsTitle": "About Vicale ICT",
+    "aboutUsDescription": "Future-focused, leveraging over 30 years of expertise in IT and banking to drive innovation.",
+    "innovativeSolutionsTitle": "Innovative Solutions",
+    "innovativeSolutionsText": "Vicale ICT is committed to delivering cutting-edge IT solutions that shape the future of financial technology and digital ecosystems.",
+    "expertTeamTitle": "Expert Team",
+    "expertTeamText": "Our team is composed of experts with backgrounds in IT, finance, banking, and academia, dedicated to driving meaningful change across industries.",
+    "yearsOfExperienceTitle": "30+ Years of Experience",
+    "yearsOfExperienceText": "With over three decades of experience, Vicale ICT is a leader in creating sustainable, secure, and compliant IT infrastructures.",
+    "meetOurTeam": "Meet Our Team",
+    "ceoAltText": "Predrag Nikolic",
+    "ceoName": "Predrag Nikolic - CEO",
+    "ceoBio": "Predrag Nikolic is a visionary leader with extensive expertise in banking and IT. He has dedicated his career to building innovative solutions and shaping the future of financial technology. His leadership at Vicale ICT drives the company’s success in delivering secure and efficient IT solutions to clients worldwide."
+  },
+  "services": {
+    "servicesPageTitle": "Services - Vicale ICT",
+    "title": "Our Services",
+    "paymentProcessingTitle": "Payment Processing",
+    "paymentProcessingText": "We leverage machine learning algorithms and data science tools to ensure your financial transactions are optimized for added value.",
+    "blockchainTitle": "Blockchain Solutions",
+    "blockchainText": "With experience in multiple sectors like banking, telco, and gaming, we deliver tailored blockchain solutions that fit your unique needs.",
+    "digitalAssetManagementTitle": "Digital Asset Management",
+    "digitalAssetManagementText": "We ensure safe digital asset management through complete regulatory compliance and the latest best practices in the industry."
+  },
+  "contact": {
+    "contactPageTitle": "Contact - Vicale ICT",
+    "contactTitle": "Get in Touch",
+    "nameLabel": "Name",
+    "namePlaceholder": "Enter your name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Enter your email",
+    "subjectLabel": "Subject",
+    "subjectPlaceholder": "Enter the subject",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Write your message here...",
+    "sendMessageButton": "Send Message",
+    "modalTitle": "Email Sending Notification",
+    "modalCloseButton": "Close",
+    "emailSuccess": "Email sent successfully. We will respond as soon as we can.",
+    "emailFailure": "Failed to send the email. Please try again later.",
+    "emailError": "An error occurred. Please try again later."
+  }
+}
