@@ -154,7 +154,7 @@ function reloadWebsite() {
 }
 
 // Uncomment to activate periodic reloads
-// setInterval(reloadWebsite, interval);
+setInterval(reloadWebsite, interval);
 
 // Start the server
 app.listen(PORT, () => {
